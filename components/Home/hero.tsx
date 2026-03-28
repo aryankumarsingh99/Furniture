@@ -1,7 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const heroImages = [
+const heroImages = [  
+  "https://en.eastern-edition.com/web/upload/epblossom/img/easternedition-la-showroom.jpg",
+  "https://en.eastern-edition.com/web/upload/epblossom/img/easternedition-atelier-1.jpg",
   "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1674532076630-cf1f4f730a73?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ];
