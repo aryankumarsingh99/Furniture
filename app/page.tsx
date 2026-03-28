@@ -9,7 +9,7 @@ import MarqueeSection from "../components/Home/MarqueeSection";
 
 import FeaturesSection from "../components/Home/FeaturesSection";
 import DecorSection from "../components/Home/DecorSection";
-import ContactSection from "../components/ContactSection";
+import ContactSection from "../components/Home/ContactSection";
 import Footer from "../components/Footer";
 
 import { useState } from "react";

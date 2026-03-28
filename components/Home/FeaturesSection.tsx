@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -39,7 +40,7 @@ export default function FeaturesSection() {
           <p className="max-w-md text-base leading-8 text-[#a47551] mb-8">
             Discover the features that make our furniture the perfect fit for your home and lifestyle. Designed for comfort, built for life.
           </p>
-          <video
+          <motion.video
             src="/video/v5.mp4"
             autoPlay
             loop
@@ -47,14 +48,22 @@ export default function FeaturesSection() {
             playsInline
             className="w-full max-w-md rounded-2xl shadow-xl border-4 border-[#ca965f] object-cover"
             aria-label="Modern wooden furniture in a living room video"
+            initial={{ opacity: 0, scale: 0.7, rotate: -8 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "backOut" }}
           />
         </div>
         {/* Right: Features vertical stack */}
         <div className="flex-1 flex flex-col gap-8 w-full">
           {features.map((feature, idx) => (
-            <div
+            <motion.div
               key={feature.title}
               className="group bg-white/90 border-l-8 border-[#a47551] rounded-xl shadow-lg p-8 flex items-center gap-6 transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl"
+              initial={{ opacity: 0, scale: 0.7, rotate: idx % 2 === 0 ? -8 : 8 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.7, delay: idx * 0.12, ease: "backOut" }}
             >
               <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#fff7ee] border-4 border-[#a47551] shadow">
                 <FaCheck className="text-2xl text-[#a47551]" />
@@ -64,7 +73,7 @@ export default function FeaturesSection() {
                 <p className="text-base text-[#a47551] mb-1">{feature.desc}</p>
                 <div className="text-sm text-[#a47551] opacity-80 italic">{feature.note}</div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
