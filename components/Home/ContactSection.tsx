@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
  
 const formEndpoint = "https://formsubmit.co/furniture.inquiries@example.com";
 
@@ -74,7 +75,13 @@ export default function ContactSection() {
  
       <div className="relative z-10 mx-auto w-full max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
-          <div className="border border-[#bfa181]/70 bg-[#f5e9da]/70 p-6 shadow-[0_24px_80px_rgba(191,161,129,0.18)] backdrop-blur-xl sm:p-8 lg:p-10">
+          <motion.div
+            className="border border-[#bfa181]/70 bg-[#f5e9da]/70 p-6 shadow-[0_24px_80px_rgba(191,161,129,0.18)] backdrop-blur-xl sm:p-8 lg:p-10"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "backOut" }}
+          >
             <div className="inline-flex border border-[#bfa181]/70 bg-[#f7e6d4]/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#7c5e3c] backdrop-blur-sm">
               Customer Support
             </div>
@@ -102,9 +109,15 @@ export default function ContactSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className="border border-[#bfa181]/70 bg-[#f5e9da]/70 p-6 shadow-[0_24px_80px_rgba(191,161,129,0.18)] backdrop-blur-xl sm:p-8 lg:p-10">
+          <motion.div
+            className="border border-[#bfa181]/70 bg-[#f5e9da]/70 p-6 shadow-[0_24px_80px_rgba(191,161,129,0.18)] backdrop-blur-xl sm:p-8 lg:p-10"
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "backOut" }}
+          >
             <div className="animate-contactReveal border border-[#bfa181]/70 bg-[#f7e6d4]/90 p-5 backdrop-blur-lg sm:p-6 lg:p-8">
               <div className="pb-4">
                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#a47551]">
@@ -185,7 +198,7 @@ export default function ContactSection() {
                 ) : null}
               </form>
             </div>
-          </div>
+          </motion.div>
         </div>
 
        
