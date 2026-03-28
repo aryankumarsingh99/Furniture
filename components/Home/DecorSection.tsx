@@ -34,6 +34,8 @@ const decorItems = [
   },
 ];
 
+import { motion } from "framer-motion";
+
 export default function DecorSection() {
   return (
     <section className="relative bg-[#fdf3f2] px-4 py-16 sm:px-6 lg:px-8">
@@ -52,19 +54,33 @@ export default function DecorSection() {
           {/* Mobile: horizontal scroll */}
           <div className="flex gap-6 overflow-x-auto pb-4 md:hidden">
             {decorItems.map((item, idx) => (
-              <div key={item.title} className="bg-white rounded-2xl shadow-xl overflow-hidden flex-shrink-0 flex flex-col items-center p-4 transition-transform hover:scale-110 min-w-[220px] min-h-[260px] w-[220px]">
+              <motion.div
+                key={item.title}
+                className="bg-white rounded-2xl shadow-xl overflow-hidden flex-shrink-0 flex flex-col items-center p-4 transition-transform hover:scale-110 min-w-[220px] min-h-[260px] w-[220px]"
+                initial={{ opacity: 0, x: idx % 2 === 0 ? -60 : 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.6, delay: idx * 0.08, ease: "easeOut" }}
+              >
                 <img src={item.img} alt={item.title} className="w-full h-44 object-cover rounded-t-2xl" />
                 <div className="py-4 text-center font-bold text-[#2d1c10] text-lg">{item.title}</div>
-              </div>
+              </motion.div>
             ))}
           </div>
           {/* Desktop/tablet: grid */}
           <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 gap-10 w-full">
             {decorItems.map((item, idx) => (
-              <div key={item.title} className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col items-center p-4 transition-transform hover:scale-110 min-w-[240px] min-h-[260px] w-full max-w-[270px]">
+              <motion.div
+                key={item.title}
+                className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col items-center p-4 transition-transform hover:scale-110 min-w-[240px] min-h-[260px] w-full max-w-[270px]"
+                initial={{ opacity: 0, x: idx % 2 === 0 ? -80 : 80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.6, delay: idx * 0.08, ease: "easeOut" }}
+              >
                 <img src={item.img} alt={item.title} className="w-full h-48 object-cover rounded-t-2xl" />
                 <div className="py-5 text-center font-bold text-[#2d1c10] text-xl sm:text-2xl">{item.title}</div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

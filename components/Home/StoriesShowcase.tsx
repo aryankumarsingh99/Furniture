@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 
 const cardData = [
@@ -58,15 +59,19 @@ const StoriesShowcase = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-[#bb8d48] mb-6">Stories Behind the Style</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cardData.map((card, idx) => (
-            <div
+            <motion.div
               key={idx}
               ref={cardRefs[idx]}
               className="bg-white/80 border-2 border-[#bfa76a] rounded-xl shadow-lg overflow-hidden flex flex-col backdrop-blur-md transition-all duration-300 group hover:shadow-[0_0_32px_8px_rgba(187,141,72,0.35)] hover:border-[#bb8d48] hover:bg-white/60 hover:backdrop-blur-xl cursor-pointer"
               onMouseMove={e => tiltCard(e, idx)}
               onMouseLeave={() => resetTilt(idx)}
+              initial={{ opacity: 0, scale: 0.8, rotate: idx % 2 === 0 ? -8 : 8 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.7, delay: idx * 0.12, ease: "backOut" }}
             >
-              <div className="w-full h-85 flex flex-col items-center justify-center bg-[#f8fbf2] relative">
-                <video className="w-full h-full object-cover" autoPlay loop muted playsInline poster={card.poster} style={{height: '340px'}}>
+              <div className="w-full h-85 flex flex-col items-center justify-center bg-[#f8fbf2] relative" style={{ minHeight: '420px', minWidth: '340px', maxWidth: '600px', margin: '0 auto' }}>
+                <video className="w-full h-full object-cover" autoPlay loop muted playsInline poster={card.poster} style={{height: '400px', width: '100%'}}>
                   <source src={card.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -77,7 +82,7 @@ const StoriesShowcase = () => {
               <div className="p-4 mt-6">
                 <div className="font-semibold text-[#7c5e3c] text-base mb-1">{card.desc}</div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
