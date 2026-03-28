@@ -57,10 +57,10 @@ export default function DecorSection() {
               <motion.div
                 key={item.title}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden flex-shrink-0 flex flex-col items-center p-4 transition-transform hover:scale-110 min-w-[220px] min-h-[260px] w-[220px]"
-                initial={{ opacity: 0, x: idx % 2 === 0 ? -60 : 60 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: idx * 0.08, ease: "easeOut" }}
+                transition={{ duration: 0.6, delay: idx * 0.08, ease: "backOut" }}
               >
                 <img src={item.img} alt={item.title} className="w-full h-44 object-cover rounded-t-2xl" />
                 <div className="py-4 text-center font-bold text-[#2d1c10] text-lg">{item.title}</div>
@@ -73,10 +73,10 @@ export default function DecorSection() {
               <motion.div
                 key={item.title}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col items-center p-4 transition-transform hover:scale-110 min-w-[240px] min-h-[260px] w-full max-w-[270px]"
-                initial={{ opacity: 0, x: idx % 2 === 0 ? -80 : 80 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: false, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: idx * 0.08, ease: "easeOut" }}
+                transition={{ duration: 0.6, delay: idx * 0.08, ease: "backOut" }}
               >
                 <img src={item.img} alt={item.title} className="w-full h-48 object-cover rounded-t-2xl" />
                 <div className="py-5 text-center font-bold text-[#2d1c10] text-xl sm:text-2xl">{item.title}</div>
