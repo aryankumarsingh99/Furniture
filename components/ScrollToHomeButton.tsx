@@ -48,18 +48,18 @@ export default function ScrollToHomeButton() {
         type="button"
         aria-label="Scroll to contact section"
         onClick={handleMessageClick}
-        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#6f8d45] bg-[linear-gradient(180deg,#355734_0%,#243c25_100%)] text-[#f4f8ec] shadow-[0_18px_40px_rgba(19,31,18,0.34)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8fae63] hover:bg-[linear-gradient(180deg,#426a40_0%,#2a462b_100%)]"
+        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#bb8d48] bg-gradient-to-b from-[#ffe9b0] to-[#bb8d48] text-[#7c5e3c] shadow-[0_8px_24px_rgba(187,141,72,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bfa76a] hover:bg-gradient-to-b hover:from-[#fff9ed] hover:to-[#ffe9b0]"
       >
-        <FaEnvelope className="text-sm" />
+        <FaEnvelope className="text-lg" />
       </button>
 
       <button
         type="button"
         aria-label="Scroll to home section"
         onClick={handleClick}
-        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#6f8d45] bg-[linear-gradient(180deg,#355734_0%,#243c25_100%)] text-[#f4f8ec] shadow-[0_18px_40px_rgba(19,31,18,0.34)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8fae63] hover:bg-[linear-gradient(180deg,#426a40_0%,#2a462b_100%)]"
+        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#bb8d48] bg-gradient-to-b from-[#ffe9b0] to-[#bb8d48] text-[#7c5e3c] shadow-[0_8px_24px_rgba(187,141,72,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bfa76a] hover:bg-gradient-to-b hover:from-[#fff9ed] hover:to-[#ffe9b0]"
       >
-        <FaArrowUp className="text-sm" />
+        <FaArrowUp className="text-lg" />
       </button>
     </div>
   );

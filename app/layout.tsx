@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PK Argo Industry ",
+  title: "Raj Laxmi Wooden Furniture ",
   description: "Leading rice mill providing premium quality rice processing and distribution services",
 };
 
