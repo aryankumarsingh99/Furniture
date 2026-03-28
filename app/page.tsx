@@ -24,7 +24,7 @@ export default function Home() {
       <PromoShowcase />
       <MarqueeSection />
       <StoriesShowcase />
-       <IllustratorShowcase />
+      <IllustratorShowcase />
       <StoresShowcase />
       {/* <StatsSection /> */}
       {/* <AboutSection /> */}

@@ -1,7 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const IllustratorShowcase = () => (
-  <section className="relative w-full h-[500px] flex items-center justify-center bg-[#1a2636]">
+  <motion.section
+    className="relative w-full h-[500px] flex items-center justify-center bg-[#1a2636]"
+    initial={{ opacity: 0, scale: 0.85, rotate: 6 }}
+    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+    viewport={{ once: false, amount: 0.3 }}
+    transition={{ duration: 0.7, ease: "backOut" }}
+  >
     <img
       src="https://en.eastern-edition.com/web/upload/epblossom/philosophy/PHILOSOPHY-1.jpg"
       alt="Illustrator Showcase"
@@ -16,7 +23,7 @@ const IllustratorShowcase = () => (
         Learn Our Philosophy
       </button>
     </div>
-  </section>
+  </motion.section>
 );
 
 export default IllustratorShowcase;

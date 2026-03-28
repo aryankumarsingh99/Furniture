@@ -1,9 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const PromoShowcase = () => (
-  <section className="w-full max-w-[2200px] mx-auto flex flex-col lg:flex-row gap-6 items-stretch justify-center py-28 px-2 md:px-8 min-h-[850px] bg-[#f8fafc]">
+  <section className="w-full max-w-[2200px] mx-auto flex flex-col lg:flex-row gap-6 items-stretch justify-center py-16 md:py-28 px-2 md:px-8 min-h-[850px] bg-[#f8fafc]">
     {/* Left Large Promo */}
-    <div className="flex-1 bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex flex-col justify-end relative min-h-[420px] max-w-4xl mx-auto lg:mx-0 border border-[#e0e7ef]">
+    <motion.div
+      className="flex-1 bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex flex-col justify-end relative min-h-[320px] sm:min-h-[420px] w-full sm:max-w-4xl mx-auto lg:mx-0 border border-[#e0e7ef] mb-6 lg:mb-0"
+      initial={{ opacity: 0, scale: 0.85, rotate: -6 }}
+      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "backOut" }}
+    >
         <img
           src="/Images/1.jpeg"
           alt="Dining Set"
@@ -19,11 +26,17 @@ const PromoShowcase = () => (
           New Arrival
         </div>
       </div>
-    </div>
+    </motion.div>
     {/* Right Promos */}
-    <div className="flex flex-col gap-6 flex-1 max-w-2xl mx-auto lg:mx-0">
+    <div className="flex flex-col gap-6 flex-1 w-full sm:max-w-2xl mx-auto lg:mx-0">
       {/* Top Right */}
-      <div className="bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex-1 flex flex-col relative min-h-[320px] border border-[#e0e7ef]">
+      <motion.div
+        className="bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex-1 flex flex-col relative min-h-[200px] sm:min-h-[320px] border border-[#e0e7ef]"
+        initial={{ opacity: 0, scale: 0.85, rotate: 6 }}
+        whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.7, delay: 0.15, ease: "backOut" }}
+      >
         <img
           src="/Images/2.jpeg"
           alt="Sit Sleep Store"
@@ -38,9 +51,15 @@ const PromoShowcase = () => (
             Limited Edition
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Bottom Right */}
-      <div className="bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex-1 flex flex-col relative min-h-[320px] border border-[#e0e7ef]">
+      <motion.div
+        className="bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex-1 flex flex-col relative min-h-[200px] sm:min-h-[320px] border border-[#e0e7ef]"
+        initial={{ opacity: 0, scale: 0.85, rotate: -6 }}
+        whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.7, delay: 0.3, ease: "backOut" }}
+      >
         <img
           src="/Images/3.jpeg"
           alt="Recline Revolve Rock"
@@ -69,7 +88,7 @@ const PromoShowcase = () => (
             </span>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   </section>
 );
