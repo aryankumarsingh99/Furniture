@@ -15,10 +15,10 @@ const brandIcons = [
 
 export default function MarqueeSection() {
   return (
-    <section className="relative z-10 bg-white px-4 py-10 sm:px-6 lg:px-8">
+    <section className="relative z-10 bg-white px-4 py-15 sm:px-6 lg:px-8 min-h-[320px]">
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between mb-10">
-          <h2 className="text-4xl font-bold text-black">Brands</h2>
+          <h2 className="text-4xl font-bold text-[#bb8d48]">Brands</h2>
           <div className="flex gap-4">
             <button className="w-12 h-12 rounded-full border border-[#e0e0e0] flex items-center justify-center text-xl text-[#bbb] bg-white hover:bg-[#f5f5f5] transition">
               <FaChevronLeft />
