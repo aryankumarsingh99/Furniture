@@ -1,9 +1,9 @@
 import React from "react";
 
 const PromoShowcase = () => (
-  <section className="w-full flex flex-col lg:flex-row gap-6 items-stretch justify-center py-28 px-2 md:px-8 min-h-[850px] bg-[#f8fafc]">
+  <section className="w-full max-w-[2200px] mx-auto flex flex-col lg:flex-row gap-6 items-stretch justify-center py-28 px-2 md:px-8 min-h-[850px] bg-[#f8fafc]">
     {/* Left Large Promo */}
-    <div className="flex-1 bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex flex-col justify-end relative min-h-[420px] max-w-2xl mx-auto lg:mx-0 border border-[#e0e7ef]">
+    <div className="flex-1 bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex flex-col justify-end relative min-h-[420px] max-w-4xl mx-auto lg:mx-0 border border-[#e0e7ef]">
         <img
           src="/Images/1.jpeg"
           alt="Dining Set"
@@ -21,7 +21,7 @@ const PromoShowcase = () => (
       </div>
     </div>
     {/* Right Promos */}
-    <div className="flex flex-col gap-6 flex-1 max-w-xl mx-auto lg:mx-0">
+    <div className="flex flex-col gap-6 flex-1 max-w-2xl mx-auto lg:mx-0">
       {/* Top Right */}
       <div className="bg-[#f3f6fa] rounded-2xl shadow-xl overflow-hidden flex-1 flex flex-col relative min-h-[320px] border border-[#e0e7ef]">
         <img
