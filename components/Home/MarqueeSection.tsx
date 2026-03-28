@@ -1,54 +1,63 @@
 import React from "react";
-import Image from "next/image";
-import { FaCouch, FaChair, FaCubes, FaShippingFast, FaGem, FaTools } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const furnitureHighlights = [
-  { icon: <FaCouch className="text-[#bb8d48]" />, text: "Modern & Classic Sofas" },
-  { icon: <FaChair className="text-[#bb8d48]" />, text: "Designer Chairs & Recliners" },
-  { icon: <FaCubes className="text-[#bb8d48]" />, text: "Modular Storage Solutions" },
-  { icon: <FaGem className="text-[#bb8d48]" />, text: "Premium Materials & Finish" },
-  { icon: <FaTools className="text-[#bb8d48]" />, text: "Custom Craftsmanship" },
-  { icon: <FaShippingFast className="text-[#bb8d48]" />, text: "Fast Delivery & Assembly" },
+const brandIcons = [
+  "/svg/1.svg",
+  "/svg/2.svg",
+  "/svg/3.svg",
+  "/svg/4.svg",
+  "/svg/5.svg",
+  "/svg/6.svg",
+  "/svg/7.svg",
+  "/svg/8.svg"
 ];
 
-function MarqueeRail({ items }: { items: typeof furnitureHighlights }) {
-  const doubled = [...items, ...items];
-
-  return (
-    <div className="relative overflow-hidden">
-      <div className="animate-marquee flex w-max whitespace-nowrap hover:[animation-play-state:paused]">
-        {doubled.map((item, i) => (
-          <span
-            key={i}
-            className="inline-flex items-center gap-6 border-r border-[#e7d3b7] px-12 py-7 text-xl font-semibold text-[#7c5e3c] sm:px-14 sm:py-8 sm:text-[1.55rem] bg-transparent"
-          >
-            <span className="text-2xl sm:text-[1.9rem]">{item.icon}</span>
-            <span>{item.text}</span>
-            <span className="text-2xl text-[#e7d3b7]">•</span>
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 export default function MarqueeSection() {
   return (
-    <section className="relative z-10 bg-gradient-to-b from-[#fff7ee] to-[#f7ede2] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
-      <div className="mx-auto max-w-7xl border border-[#e7d3b7] bg-[#fff7ee] rounded-2xl shadow-md">
-        <div className="flex flex-col lg:flex-row lg:items-center">
-          <div className="border-b border-[#e7d3b7] bg-[#fff7ee] px-7 py-7 text-[15px] font-semibold uppercase tracking-[0.32em] text-[#bfa76a] flex items-center gap-4 lg:min-w-80 lg:border-b-0 lg:border-r lg:px-9 lg:py-8">
-            <Image src="/logo.png" alt="Furniture Brand Logo" width={48} height={48} className="rounded-full border border-[#e7d3b7] bg-white" />
-            Furniture Highlights
+    <section className="relative z-10 bg-white px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="flex items-center justify-between mb-10">
+          <h2 className="text-4xl font-bold text-black">Brands</h2>
+          <div className="flex gap-4">
+            <button className="w-12 h-12 rounded-full border border-[#e0e0e0] flex items-center justify-center text-xl text-[#bbb] bg-white hover:bg-[#f5f5f5] transition">
+              <FaChevronLeft />
+            </button>
+            <button className="w-12 h-12 rounded-full border border-[#e0e0e0] flex items-center justify-center text-xl text-[#bbb] bg-white hover:bg-[#f5f5f5] transition">
+              <FaChevronRight />
+            </button>
           </div>
-
-          <div className="relative flex-1 overflow-hidden bg-[#fff7ee]">
-            <div className="pointer-events-none absolute inset-y-0    sm:w-12" />
-            <div className="pointer-events-none absolute inset-y-0    sm:w-12" />
-            <MarqueeRail items={furnitureHighlights} />
+        </div>
+        <div className="relative overflow-hidden w-full">
+          <div
+            className="flex w-max gap-16 animate-marquee"
+            style={{ animation: 'marquee 22s linear infinite' }}
+          >
+            {[...brandIcons, ...brandIcons].map((icon, idx) => (
+              <img
+                key={idx}
+                src={icon}
+                alt={`Brand ${idx % brandIcons.length + 1}`}
+                className="h-28 w-28 object-contain"
+                style={{ minWidth: 112 }}
+              />
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
+}
+
+// Add marquee animation CSS
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+`;
+if (typeof window !== 'undefined' && !document.getElementById('marquee-anim')) {
+  style.id = 'marquee-anim';
+  document.head.appendChild(style);
 }
