@@ -13,7 +13,12 @@ const navLinks = [
   { path: "/contact", label: "Contact" },
 ];
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+interface NavbarProps {
+  menuOpen: boolean;
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Navbar({ menuOpen, setMenuOpen }: NavbarProps) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   // Remove activeSection and scroll logic for file-based routing
