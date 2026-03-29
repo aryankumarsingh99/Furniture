@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raj Laxmi Wooden Furniture ",
+  title: "Raj Laxmi Wooden Furnitures ",
   description: "Leading rice mill providing premium quality rice processing and distribution services",
 };
 

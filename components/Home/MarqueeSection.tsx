@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const brandIcons = [
-  "/svg/1.svg",
-  "/svg/2.svg",
-  "/svg/3.svg",
-  "/svg/4.svg",
-  "/svg/5.svg",
-  "/svg/6.svg",
-  "/svg/7.svg",
-  "/svg/8.svg"
+  "/svg/img1.jpg",
+  "/svg/img2.png",
+  "/svg/img3.png",
+  "/svg/img4.png",
+  "/svg/img5.png",
+  "/svg/img6.webp",
+  "/svg/img7.png",
+   
 ];
 
 
@@ -48,12 +48,12 @@ export default function MarqueeSection() {
             style={{ animation: 'marquee 22s linear infinite' }}
           >
             {[...brandIcons, ...brandIcons].map((icon, idx) => (
-              <span key={idx} style={{ minWidth: 112 }}>
+              <span key={idx} style={{ minWidth: 142 }}>
                 {/* Replace <img> with next/image for optimization if possible */}
                 <img
                   src={icon}
                   alt={`Brand ${idx % brandIcons.length + 1}`}
-                  className="h-28 w-28 object-contain"
+                  className="h-48 w-48 object-contain"
                   loading="lazy"
                 />
               </span>
