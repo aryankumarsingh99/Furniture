@@ -20,21 +20,22 @@ export default function ScrollToHomeButton() {
   }, []);
 
   const handleClick = () => {
-    const homeSection = document.getElementById("home");
-
-    if (homeSection) {
-      homeSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      return;
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      const homeSection = document.getElementById("home");
+      if (homeSection) {
+        homeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleMessageClick = () => {
-    const contactSection = document.getElementById("contact");
-
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
@@ -48,7 +49,7 @@ export default function ScrollToHomeButton() {
         type="button"
         aria-label="Scroll to contact section"
         onClick={handleMessageClick}
-        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#bb8d48] bg-gradient-to-b from-[#ffe9b0] to-[#bb8d48] text-[#7c5e3c] shadow-[0_8px_24px_rgba(187,141,72,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bfa76a] hover:bg-gradient-to-b hover:from-[#fff9ed] hover:to-[#ffe9b0]"
+        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#bb8d48] bg-linear-to-b from-[#ffe9b0] to-[#bb8d48] text-[#7c5e3c] shadow-[0_8px_24px_rgba(187,141,72,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bfa76a] hover:bg-linear-to-b hover:from-[#fff9ed] hover:to-[#ffe9b0]"
       >
         <FaEnvelope className="text-lg" />
       </button>
@@ -57,7 +58,7 @@ export default function ScrollToHomeButton() {
         type="button"
         aria-label="Scroll to home section"
         onClick={handleClick}
-        className="flex h-12 w-12 items-center justify-center rounded-full border border-[#bb8d48] bg-gradient-to-b from-[#ffe9b0] to-[#bb8d48] text-[#7c5e3c] shadow-[0_8px_24px_rgba(187,141,72,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bfa76a] hover:bg-gradient-to-b hover:from-[#fff9ed] hover:to-[#ffe9b0]"
+          className="flex h-12 w-12 items-center justify-center rounded-full border border-[#bb8d48] bg-linear-to-b from-[#ffe9b0] to-[#bb8d48] text-[#7c5e3c] shadow-[0_8px_24px_rgba(187,141,72,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bfa76a] hover:bg-linear-to-b hover:from-[#fff9ed] hover:to-[#ffe9b0]"
       >
         <FaArrowUp className="text-lg" />
       </button>

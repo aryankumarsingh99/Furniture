@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const brandIcons = [
@@ -14,8 +14,22 @@ const brandIcons = [
 
 
 export default function MarqueeSection() {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof document !== 'undefined' && !document.getElementById('marquee-anim')) {
+      const style = document.createElement('style');
+      style.innerHTML = `
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `;
+      style.id = 'marquee-anim';
+      document.head.appendChild(style);
+    }
+  }, []);
+
   return (
-    <section className="relative z-10 bg-white px-4 py-15 sm:px-6 lg:px-8 min-h-[320px]">
+    <section className="relative z-10 bg-white px-4 py-15 sm:px-6 lg:px-8 min-h-80">
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-4xl font-bold text-[#bb8d48]">Brands</h2>
@@ -34,13 +48,15 @@ export default function MarqueeSection() {
             style={{ animation: 'marquee 22s linear infinite' }}
           >
             {[...brandIcons, ...brandIcons].map((icon, idx) => (
-              <img
-                key={idx}
-                src={icon}
-                alt={`Brand ${idx % brandIcons.length + 1}`}
-                className="h-28 w-28 object-contain"
-                style={{ minWidth: 112 }}
-              />
+              <span key={idx} style={{ minWidth: 112 }}>
+                {/* Replace <img> with next/image for optimization if possible */}
+                <img
+                  src={icon}
+                  alt={`Brand ${idx % brandIcons.length + 1}`}
+                  className="h-28 w-28 object-contain"
+                  loading="lazy"
+                />
+              </span>
             ))}
           </div>
         </div>
@@ -49,15 +65,4 @@ export default function MarqueeSection() {
   );
 }
 
-// Add marquee animation CSS
-const style = document.createElement('style');
-style.innerHTML = `
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-`;
-if (typeof window !== 'undefined' && !document.getElementById('marquee-anim')) {
-  style.id = 'marquee-anim';
-  document.head.appendChild(style);
-}
+

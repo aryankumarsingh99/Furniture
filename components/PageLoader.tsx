@@ -12,6 +12,7 @@ export default function PageLoader({ children }: PageLoaderProps) {
   const [isExiting, setIsExiting] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined" || typeof document === "undefined") return;
     const minimumVisibleTime = 900;
     const exitDuration = 450;
     const startTime = window.performance.now();
