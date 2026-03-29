@@ -41,11 +41,11 @@ export default function Navbar({ menuOpen, setMenuOpen }: NavbarProps) {
   return (
     <nav className="fixed left-0 top-3 z-50 w-full -translate-x-0 md:top-4">
       <div
-        className={`animate-navbarReveal px-4 transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? 'bg-[#bb8d48]' : 'bg-[#fcf9f1]'}`}
+        className="animate-navbarReveal px-4 transition-all duration-300 sm:px-6 lg:px-8 bg-[#bb8d48]"
       >
         <div className="relative z-60 flex h-26 items-center justify-between md:h-20 lg:h-26 md:justify-center">
           <Link href="/" className="flex items-center gap-3 md:absolute md:left-0">
-            <div className={`flex h-11 w-11 items-center justify-center border ml-4 md:ml-55 ${scrolled ? 'bg-[#bb8d48] text-[#fcf9f1]' : 'bg-[#fcf9f1] text-[#7c4a03]'}`}>
+            <div className="flex h-11 w-11 items-center justify-center border ml-4 md:ml-55 bg-[#bb8d48] text-[#fcf9f1]">
               {/* Logo image */}
               <img
                 src={"logo.png"}
@@ -116,7 +116,7 @@ export default function Navbar({ menuOpen, setMenuOpen }: NavbarProps) {
         style={{ boxShadow: menuOpen ? 'rgba(0,0,0,0.12) -4px 0px 24px' : undefined }}
         aria-hidden={!menuOpen}
       >
-        <div className={`h-full border-l border-[#e2c9a0] ${scrolled ? 'bg-[#bb8d48]' : 'bg-[#fcf9f1]'} p-4 flex flex-col`}>
+        <div className={`h-full border-l border-[#e2c9a0] ${scrolled ? 'bg-[#bb8d48]' : 'bg-[#bb8d48]'} p-4 flex flex-col`}>
           <div className="flex items-center justify-between pb-4">
             <div>
               <div className={`font-serif text-xl ${scrolled ? 'text-[#fcf9f1]' : 'text-[#7c4a03]'}`}>Quick navigation</div>
