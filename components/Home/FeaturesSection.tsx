@@ -54,7 +54,6 @@ export default function FeaturesSection() {
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "backOut" }}
-            loading="lazy"
           />
         </div>
         {/* Right: Features vertical stack */}
