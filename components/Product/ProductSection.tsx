@@ -10,7 +10,7 @@ const products = [
     name: "Modern Sofa",
     description: "A luxurious, contemporary sofa with plush cushions and a solid wood frame. Perfect for living rooms seeking both comfort and style.",
     note: "Available in multiple colors and fabrics. Seats 3-4 comfortably.",
-    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Modern sofa
+    image: "/Images/5.jpeg", // Modern sofa
     label: "Best Seller",
     grade: "Premium Comfort",
     use: "Living Room, Lounge",
@@ -21,7 +21,7 @@ const products = [
     name: "Oak Dining Table",
     description: "A handcrafted oak dining table with a natural finish. Seats up to 8 people and brings warmth to any dining space.",
     note: "Scratch-resistant surface. Matching chairs available.",
-    image: "https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Oak dining table
+    image: "/Images/4.jpeg", // Oak dining table
     label: "Solid Wood",
     grade: "Family Size",
     use: "Dining Room, Kitchen",
@@ -32,7 +32,7 @@ const products = [
     name: "Elegant Bedroom Set",
     description: "A complete bedroom set featuring a king-size bed, two nightstands, and a spacious dresser. Crafted from sustainable materials.",
     note: "Eco-friendly finishes. Mattress not included.",
-    image: "https://images.unsplash.com/flagged/photo-1590227000970-3ae55d48501e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Elegant bedroom set
+    image: "/Images/3.jpeg", // Elegant bedroom set
     label: "Eco Choice",
     grade: "Sustainable Luxury",
     use: "Bedroom, Guest Room",
@@ -43,7 +43,7 @@ const products = [
     name: "Minimalist Bookshelf",
     description: "A sleek, open-frame bookshelf with adjustable shelves. Ideal for displaying books, decor, and plants in any room.",
     note: "Easy to assemble. Lightweight yet sturdy.",
-    image: "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?q=80&w=1170&auto=format&fit=crop", // Minimalist bookshelf
+    image: "/Images/2.jpeg", // Minimalist bookshelf
     label: "Top Pick",
     grade: "Versatile Storage",
     use: "Living Room, Study, Office",
@@ -54,7 +54,7 @@ const products = [
     name: "Classic Armchair",
     description: "A timeless armchair with rolled arms and deep seating. Upholstered in premium fabric for lasting comfort.",
     note: "Available in custom fabrics and colors.",
-    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1170&auto=format&fit=crop", // Classic armchair
+    image: "/Images/1.jpeg", // Classic armchair
     label: "Customizable",
     grade: "Classic Comfort",
     use: "Living Room, Bedroom",
@@ -65,7 +65,7 @@ const products = [
     name: "Glass Coffee Table",
     description: "A modern coffee table with a tempered glass top and metal legs. Adds a touch of elegance to your seating area.",
     note: "Easy to clean. Shatter-resistant glass.",
-    image: "https://images.unsplash.com/photo-1636138389529-d35a2a348dc1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Glass coffee table
+    image: "/Images/11.jpeg", // Glass coffee table
     label: "Modern Style",
     grade: "Elegant Accent",
     use: "Living Room, Office",
@@ -76,7 +76,7 @@ const products = [
     name: "Wooden TV Stand",
     description: "A sturdy TV stand with ample storage for media devices and accessories. Features cable management and adjustable shelves.",
     note: "Fits TVs up to 70 inches.",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=1170&auto=format&fit=crop", // Wooden TV stand
+    image: "/Images/10.jpeg", // Wooden TV stand
     label: "Spacious",
     grade: "Media Ready",
     use: "Living Room, Entertainment Area",
@@ -87,7 +87,7 @@ const products = [
     name: "Contemporary Desk",
     description: "A spacious desk with a minimalist design, perfect for home offices or study spaces. Includes built-in drawers for organization.",
     note: "Scratch-resistant surface. Easy assembly.",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=1170&auto=format&fit=crop", // Contemporary desk
+    image: "/Images/9.jpeg", // Contemporary desk
     label: "Work From Home",
     grade: "Productivity Boost",
     use: "Office, Study Room",
@@ -98,7 +98,7 @@ const products = [
     name: "Six-Drawer Dresser",
     description: "A modern dresser with six spacious drawers and a smooth finish. Keeps your bedroom organized and stylish.",
     note: "Soft-close drawers. Anti-tip hardware included.",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=1170&auto=format&fit=crop", // Six-drawer dresser
+    image: "/Images/8.jpeg", // Six-drawer dresser
     label: "Spacious Storage",
     grade: "Bedroom Essential",
     use: "Bedroom, Guest Room",
@@ -109,7 +109,7 @@ const products = [
     name: "Bedside Nightstand",
     description: "A compact nightstand with a drawer and open shelf. Perfect for keeping essentials within reach while you rest.",
     note: "Pairs well with any bed style.",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=1170&auto=format&fit=crop", // Bedside nightstand
+    image: "/Images/7.jpeg", // Bedside nightstand
     label: "Compact",
     grade: "Convenient Storage",
     use: "Bedroom, Living Room",
@@ -184,7 +184,7 @@ export default function ProductSection() {
                 alt={product.name}
                 className="product-ledger-image h-full w-full object-cover transition duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-linear-to-r from-[#ebd6c0]/80 via-[#ffffff]/10 to-transparent" />
+              <div className="absolute inset-0 " />
               <div className="absolute left-5 top-5 inline-flex items-center gap-2 border border-white/20 bg-[#bb8d48]/90 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#ffffff] backdrop-blur-sm">
                 {product.icon}
                 {product.label}

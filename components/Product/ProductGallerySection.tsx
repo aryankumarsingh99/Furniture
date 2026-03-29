@@ -22,6 +22,95 @@ const galleryImages = [
     alt: "Bookshelf",
     label: "Bookshelf",
   },
+  {
+    src: "/Images/5.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/7.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/8.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/9.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/10.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/11.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/12.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/13.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/14.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/14.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/15.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/16.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/17.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/18.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/19.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/20.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },{
+    src: "/Images/i1.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
+  {
+    src: "/Images/i2.jpeg",
+    alt: "Bookshelf",
+    label: "Bookshelf",
+  },
       
     ];
 

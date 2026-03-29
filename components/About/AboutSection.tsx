@@ -121,7 +121,7 @@ export default function AboutSection() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/Images/6.jpeg"
                   alt="Modern living room with elegant furniture"
                   className="about-scroll-image h-80 w-full object-cover sm:h-105"
                 />
