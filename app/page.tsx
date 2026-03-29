@@ -18,23 +18,23 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-linear-to-b from-[#edf4e2] via-[#f8fbf2] to-[#dde9ca]">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      
-      <HomeHero />
-      <PromoShowcase />
-      <MarqueeSection />
-      <StoriesShowcase />
-      <IllustratorShowcase />
-     
-      {/* <StatsSection /> */}
-      {/* <AboutSection /> */}
-      {/* <HeroHighlightSection /> */}
-      {/* <ServicesSection /> */}
-      {/* <ProductSection /> */}
-      {/* <ProcessSection /> */}
-       <DecorSection />
-      <FeaturesSection />
-      <ContactSection />
-      <Footer />
+      <div className={`transition-all duration-300 ${menuOpen ? 'blur-md pointer-events-none select-none md:blur-none md:pointer-events-auto md:select-auto' : ''}`}>
+        <HomeHero />
+        <PromoShowcase />
+        <MarqueeSection />
+        <StoriesShowcase />
+        <IllustratorShowcase />
+        {/* <StatsSection /> */}
+        {/* <AboutSection /> */}
+        {/* <HeroHighlightSection /> */}
+        {/* <ServicesSection /> */}
+        {/* <ProductSection /> */}
+        {/* <ProcessSection /> */}
+        <DecorSection />
+        <FeaturesSection />
+        <ContactSection />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -117,8 +117,8 @@ export default function Navbar({ menuOpen, setMenuOpen }: NavbarProps) {
         <div className={`h-full border-l border-[#e2c9a0] ${scrolled ? 'bg-[#bb8d48]' : 'bg-[#bb8d48]'} p-4 flex flex-col`}>
           <div className="flex items-center justify-between pb-4">
             <div>
-              <div className={`font-serif text-xl ${scrolled ? 'text-[#fcf9f1]' : 'text-[#7c4a03]'}`}>Quick navigation</div>
-              <div className={`mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] ${scrolled ? 'text-[#f7ecd7]' : 'text-[#a67c52]'}`}>Mobile menu</div>
+              <div className={`font-serif text-xl ${scrolled ? 'text-[#fcf9f1]' : 'text-[#ffffff]'}`}>Quick navigation</div>
+              <div className={`mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] ${scrolled ? 'text-[#f7ecd7]' : 'text-[#ffffff]'}`}>Mobile menu</div>
             </div>
             <button
               className={`ml-2 rounded px-2 py-1 text-xs font-bold uppercase tracking-wider border border-[#e2c9a0] ${scrolled ? 'bg-[#f7ecd7] text-[#7c4a03]' : 'bg-[#e2c9a0] text-[#7c4a03]'}`}
