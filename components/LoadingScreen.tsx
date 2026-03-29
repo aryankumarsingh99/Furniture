@@ -46,7 +46,7 @@ export default function LoadingScreen({ exiting = false }: LoadingScreenProps) {
             <div className="flex items-center justify-center gap-4 lg:justify-start">
               <span className="h-px w-10 bg-[#bb8d48]" />
               <div className="text-[11px] font-semibold uppercase tracking-[0.38em] text-[#bb8d48]">
-                Rajlaxmi Wooden Furniture
+                Rajlaxmi Wooden Furnitures
               </div>
               <span className="h-px w-10 bg-[#bb8d48]" />
             </div>
