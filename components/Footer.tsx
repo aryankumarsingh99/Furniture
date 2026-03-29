@@ -64,6 +64,7 @@ export default function Footer() {
               <div>POWER HOUSE, NH 326, GLOCAL MEDICAL ROAD, Jeypore, Odisha , 764001</div>
               <div>Mon - Sat</div>
               <div>10:00 AM - 8:00 PM</div>
+              <div>Contact: <a href="tel:+91 9583245585" className="hover:underline text-[#b85c38] font-semibold">+91 99370 99989</a></div>
               <div>rajlaxmiwoodenfurniture9989@gmail.com</div>
             </div>
           </div>
@@ -77,9 +78,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/rajlaxmi_wooden_furnitures_?igsh=MXEzNjBqanNqNDUxcg==" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
                 <FaInstagram className="text-xl" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
-                <FaLinkedinIn className="text-xl" />
-              </a>
+              
             </div>
           </div>
         </div>

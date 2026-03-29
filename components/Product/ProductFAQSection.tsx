@@ -8,24 +8,20 @@ export default function ProductFAQSection() {
   const faqs = [
     {
       question: "About our profile?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.",
+      answer: "Raj Laxmi Wooden Furniture is a leading company dedicated to providing high-quality, stylish, and sustainable furniture solutions. Our mission is to enhance living and working spaces with innovative designs, exceptional craftsmanship, and a commitment to customer satisfaction. With years of experience in the industry, we pride ourselves on our attention to detail, eco-friendly practices, and a wide range of products to suit every need.",
     },
     {
       question: "News and topics?",
-      answer: "Stay updated with our latest news and trending topics in the industry.",
+      answer: "Stay updated with the latest news, product launches, and industry trends from Raj Laxmi Wooden Furniture. We regularly share updates about our new collections, special offers, and insights into the world of quality wooden furniture.",
     },
     {
       question: "How to use?",
-      answer: "Find out how to use our products and services with our easy-to-follow guides.",
+      answer: "Discover how to assemble, care for, and make the most of your Raj Laxmi Wooden Furniture products with our detailed user guides and customer support. We provide step-by-step instructions and tips to ensure you enjoy lasting quality and comfort.",
     },
   ];
   const [openIdx, setOpenIdx] = useState<number | null>(0);
-  const [search, setSearch] = useState("");
 
-  const filteredFaqs = faqs.filter(faq =>
-    faq.question.toLowerCase().includes(search.toLowerCase()) ||
-    faq.answer.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredFaqs = faqs;
 
   return (
     <section className="py-16 px-4 sm:px-8 bg-white">
@@ -33,20 +29,7 @@ export default function ProductFAQSection() {
         {/* Left: FAQ content */}
         <div className="flex-1 max-w-xl w-full">
           <h2 className="text-4xl sm:text-5xl font-bold text-[#3a4266] mb-6">Frequently Asked Questions</h2>
-          <div className="mb-8">
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search question here"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                className="w-full rounded-full border border-[#e0e0e0] bg-gradient-to-r from-[#f7f3ee] to-[#f7f3ee] py-3 pl-6 pr-12 text-base text-[#3a4266] focus:outline-none focus:ring-2 focus:ring-[#bb8d48] placeholder-[#b0b0b0]"
-              />
-              <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[#b0b0b0]">
-                <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke="#b0b0b0" strokeWidth="2"/><path d="M21 21l-4.35-4.35" stroke="#b0b0b0" strokeWidth="2" strokeLinecap="round"/></svg>
-              </span>
-            </div>
-          </div>
+          {/* Search option removed */}
           <div className="divide-y divide-[#ececec] bg-white rounded-2xl shadow-md">
             {filteredFaqs.map((faq, idx) => (
               <div key={faq.question}>

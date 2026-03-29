@@ -66,13 +66,7 @@ const galleryImages = [
     src: "/Images/14.jpeg",
     alt: "Bookshelf",
     label: "Wooden Sofa",
-  },
-  {
-    src: "/Images/14.jpeg",
-    alt: "Bookshelf",
-    label: "Artificial Sofa",
-  },
-  
+  } 
       
     ];
 
