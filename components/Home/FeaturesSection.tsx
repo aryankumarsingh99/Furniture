@@ -40,20 +40,20 @@ export default function FeaturesSection() {
           <p className="max-w-md text-base leading-8 text-[#a47551] mb-8">
             Discover the features that make our furniture the perfect fit for your home and lifestyle. Designed for comfort, built for life.
           </p>
-          <motion.video
-            src="/video/v5.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-             preload="auto"
-            className="w-full max-w-md rounded-2xl shadow-xl border-4 border-[#ca965f] object-cover"
-            aria-label="Modern wooden furniture in a living room video"
-            initial={{ opacity: 0, scale: 0.7, rotate: -8 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "backOut" }}
-          />
+          <div className="relative w-full max-w-md mb-4">
+            <video
+              className="w-full h-[500px] object-cover rounded-2xl shadow-xl border-4 border-[#ca965f]"
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster="/Images/8.jpeg"
+            >
+              <source src="/video/v5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            
+          </div>
         </div>
         {/* Right: Features vertical stack */}
         <div className="flex-1 flex flex-col gap-8 w-full">
