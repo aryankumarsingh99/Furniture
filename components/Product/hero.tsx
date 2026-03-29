@@ -19,6 +19,7 @@ export default function ProductHero() {
 		}
 	}, []);
 
+
 	return (
 		<section className="relative overflow-hidden bg-[#ecd8c3] bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 lg:pt-36">
 			<div className="absolute inset-0 overflow-hidden">
