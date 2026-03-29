@@ -12,11 +12,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl animate-footerReveal">
         <div className="grid gap-10 border-b border-[#e7d3b7] pb-10 lg:grid-cols-[1.2fr_0.9fr_0.9fr_1fr_1fr] lg:gap-12">
           <div>
-            <div className="inline-flex items-center gap-3">
+            <div className="inline-flex  items-center gap-3">
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="h-16 w-16 object-contain rounded-full border border-[#e7d3b7] bg-[#fff7ee]"
+                className="h-36 w-36 object-contain rounded-full border border-[#e7d3b7] bg-[#fff7ee]"
                 style={{ display: 'block' }}
               />
             </div>
