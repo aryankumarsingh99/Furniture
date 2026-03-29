@@ -2,11 +2,10 @@
 import Navbar from "../components/Navbar";
 import PromoShowcase from "../components/Home/PromoShowcase";
 import StoriesShowcase from "../components/Home/StoriesShowcase";
-import StoresShowcase from "../components/Home/StoresShowcase";
-import HomeHero from "../components/Home/hero";
+ import HomeHero from "../components/Home/hero";
 import IllustratorShowcase from "../components/Home/IllustratorShowcase";
 import MarqueeSection from "../components/Home/MarqueeSection";
-
+ 
 import FeaturesSection from "../components/Home/FeaturesSection";
 import DecorSection from "../components/Home/DecorSection";
 import ContactSection from "../components/Home/ContactSection";
@@ -25,15 +24,14 @@ export default function Home() {
       <MarqueeSection />
       <StoriesShowcase />
       <IllustratorShowcase />
-      <StoresShowcase />
+     
       {/* <StatsSection /> */}
       {/* <AboutSection /> */}
       {/* <HeroHighlightSection /> */}
       {/* <ServicesSection /> */}
       {/* <ProductSection /> */}
       {/* <ProcessSection /> */}
-      {/* <BannerSection /> */}
-      <DecorSection />
+       <DecorSection />
       <FeaturesSection />
       <ContactSection />
       <Footer />

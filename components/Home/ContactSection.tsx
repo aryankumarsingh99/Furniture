@@ -11,17 +11,17 @@ export default function ContactSection() {
       {
         icon: <FaPhoneAlt className="text-base" />,
         label: "Phone",
-        value: "+1 (555) 123-4567",
+        value: "+91 9583245585",
       },
       {
         icon: <FaEnvelope className="text-base" />,
         label: "Email",
-        value: "furniture.inquiries@example.com",
+        value: "rajlaxmiwoodenfurniture9989@gmail.com",
       },
       {
         icon: <FaMapMarkerAlt className="text-base" />,
         label: "Showroom Location",
-        value: "123 Modern Living Ave, Downtown, New York, NY 10001",
+        value: "POWER HOUSE, NH 326, GLOCAL MEDICAL ROAD, Jeypore, Odisha , 764001",
       },
     ];
   const [isSubmitting, setIsSubmitting] = useState(false);

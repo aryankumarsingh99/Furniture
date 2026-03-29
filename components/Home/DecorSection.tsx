@@ -1,35 +1,35 @@
 
 const decorItems = [
   {
-    title: "Floor Lamps",
-    img: "/Images/1.jpeg",
-  },
-  {
-    title: "Hanging Lights",
-    img: "/Images/2.jpeg",
-  },
-  {
-    title: "Kitchen Organiser",
-    img: "/Images/3.jpeg",
-  },
-  {
-    title: "Serving Trays",
-    img: "/Images/4.jpeg",
-  },
-  {
-    title: "Chandeliers",
+    title: "Modern Sofa",
     img: "/Images/5.jpeg",
   },
   {
-    title: "Kitchen Racks",
-    img: "/Images/6.jpeg",
+    title: "Sectional Sofa",
+    img: "/Images/2.jpeg",
   },
   {
-    title: "Chopping Board",
+    title: "Sleeper Sofa",
+    img: "/Images/3.jpeg",
+  },
+  {
+    title: "Recliner Sofa",
+    img: "/Images/4.jpeg",
+  },
+  {
+    title: "Modern Bed",
+    img: "/Images/i1.jpeg",
+  },
+  {
+    title: "Wooden Bed",
+    img: "/Images/i2.jpeg",
+  },
+  {
+    title: "Modern Dinning table ",
     img: "/Images/7.jpeg",
   },
   {
-    title: "Artificial Plants",
+    title: "Artificial Bed",
     img: "/Images/8.jpeg",
   },
 ];

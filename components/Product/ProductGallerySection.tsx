@@ -10,47 +10,47 @@ const galleryImages = [
   {
     src: "/Images/2.jpeg",
     alt: "Dining Table",
-    label: "Dining Table",
+    label: "Sectional Sofas",
   },
   {
     src: "/Images/3.jpeg",
     alt: "Bedroom Set",
-    label: "Bedroom Set",
+    label: "Sleeper Sofas",
   },
   {
     src: "/Images/4.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Sleeper Sofas",
   },
   {
     src: "/Images/5.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Luxury Sofas",
   },
   {
     src: "/Images/7.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Dining Table",
   },
   {
     src: "/Images/8.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Modern Bed",
   },
   {
     src: "/Images/9.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Artificial Bed",
   },
   {
     src: "/Images/10.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Artificial Bed",
   },
   {
     src: "/Images/11.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Modern Bed",
   },
   {
     src: "/Images/12.jpeg",
@@ -60,57 +60,19 @@ const galleryImages = [
   {
     src: "/Images/13.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Classic Dining Table",
   },
   {
     src: "/Images/14.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Wooden Sofa",
   },
   {
     src: "/Images/14.jpeg",
     alt: "Bookshelf",
-    label: "Bookshelf",
+    label: "Artificial Sofa",
   },
-  {
-    src: "/Images/15.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
-  {
-    src: "/Images/16.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
-  {
-    src: "/Images/17.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
-  {
-    src: "/Images/18.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
-  {
-    src: "/Images/19.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
-  {
-    src: "/Images/20.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },{
-    src: "/Images/i1.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
-  {
-    src: "/Images/i2.jpeg",
-    alt: "Bookshelf",
-    label: "Bookshelf",
-  },
+  
       
     ];
 

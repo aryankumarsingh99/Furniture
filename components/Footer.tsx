@@ -33,8 +33,7 @@ export default function Footer() {
             <div className="mt-4 space-y-3 text-base text-[#7c5e3c]">
               <div><a href="#home" className="transition hover:text-[#b85c38]">Home</a></div>
               <div><a href="#about" className="transition hover:text-[#b85c38]">About</a></div>
-              <div><a href="#services" className="transition hover:text-[#b85c38]">Services</a></div>
-              <div><a href="#contact" className="transition hover:text-[#b85c38]">Contact</a></div>
+               <div><a href="#contact" className="transition hover:text-[#b85c38]">Contact</a></div>
               <div><a href="#products" className="transition hover:text-[#b85c38]">Products</a></div>
             </div>
           </div>
@@ -43,17 +42,18 @@ export default function Footer() {
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a47551]">Shop</div>
             <div className="mt-4 flex flex-col gap-3 text-base text-[#7c5e3c] sm:flex-row sm:gap-8">
               <div className="space-y-3">
-                <div><a href="#floor-lamps" className="transition hover:text-[#b85c38]">Floor Lamps</a></div>
-                <div><a href="#hanging-lights" className="transition hover:text-[#b85c38]">Hanging Lights</a></div>
-                <div><a href="#kitchen-organiser" className="transition hover:text-[#b85c38]">Kitchen Organiser</a></div>
-                <div><a href="#serving-trays" className="transition hover:text-[#b85c38]">Serving Trays</a></div>
-                <div><a href="#chandeliers" className="transition hover:text-[#b85c38]">Chandeliers</a></div>
+                <div><a href="#product-modern-sofa" className="transition hover:text-[#b85c38]">Modern Sofa</a></div>
+                <div><a href="#product-dining-table" className="transition hover:text-[#b85c38]">Recliner Sofa</a></div>
+                <div><a href="#product-bedroom-set" className="transition hover:text-[#b85c38]">Sleeper Sofa</a></div>
+                <div><a href="#product-bookshelf" className="transition hover:text-[#b85c38]">Sectional Sofa</a></div>
+                <div><a href="#product-armchair" className="transition hover:text-[#b85c38]">Classic Sofa</a></div>
               </div>
               <div className="space-y-3">
-                <div><a href="#kitchen-racks" className="transition hover:text-[#b85c38]">Kitchen Racks</a></div>
-                <div><a href="#chopping-board" className="transition hover:text-[#b85c38]">Chopping Board</a></div>
-                <div><a href="#artificial-plants" className="transition hover:text-[#b85c38]">Artificial Plants</a></div>
-                <div><a href="#decor" className="transition hover:text-[#b85c38]">All Decor</a></div>
+                <div><a href="#product-coffee-table" className="transition hover:text-[#b85c38]">Premium Comfort Bed</a></div>
+                <div><a href="#product-tv-stand" className="transition hover:text-[#b85c38]">Wooden Bed</a></div>
+                <div><a href="#product-desk" className="transition hover:text-[#b85c38]">Artificial Bed</a></div>
+                <div><a href="#product-dresser" className="transition hover:text-[#b85c38]">Modern Bed</a></div>
+                <div><a href="#product-nightstand" className="transition hover:text-[#b85c38]">Oak Dining Table</a></div>
               </div>
             </div>
           </div>
@@ -61,10 +61,10 @@ export default function Footer() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a47551]">Showroom</div>
             <div className="mt-4 space-y-3 text-base leading-7 text-[#a47551]">
-              <div>123 Modern Ave, Downtown, Cityname</div>
+              <div>POWER HOUSE, NH 326, GLOCAL MEDICAL ROAD, Jeypore, Odisha , 764001</div>
               <div>Mon - Sat</div>
               <div>10:00 AM - 8:00 PM</div>
-              <div>hello@furnistyle.com</div>
+              <div>rajlaxmiwoodenfurniture9989@gmail.com</div>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
               <a href="#" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
                 <FaFacebookF className="text-xl" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
+              <a href="https://www.instagram.com/rajlaxmi_wooden_furnitures_?igsh=MXEzNjBqanNqNDUxcg==" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
                 <FaInstagram className="text-xl" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
@@ -83,12 +83,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-6 max-w-lg text-base leading-7 text-[#a47551]">
-          Have questions or need help designing your dream space? Reach out for personalized support and exclusive offers.
-        </p>
+        
 
         <div className="flex flex-col gap-3 pt-8 text-base text-[#a47551] sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 <span className="font-semibold">FurniStyle</span>. All rights reserved.</p>
+          <p>© 2026 <span className="font-semibold">Swift Rise Pvt Ltd </span>. All rights reserved.</p>
           <p>Crafted with passion for modern living.</p>
         </div>
       </div>

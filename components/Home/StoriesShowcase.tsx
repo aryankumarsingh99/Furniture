@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const cardData = [
   {
-    video: "/video/v1.mp4",
+    video: "/video/v7.mp4",
     poster: "/Images/4.jpeg",
     overlay: <>Relax in Style <span className="text-[#bb8d48] group-hover:text-white">Recliner</span></>,
     desc: "Arvana Motorized R3 Rocking Revolving 1 Seater Recliner in Suede Fabric (Grey)",

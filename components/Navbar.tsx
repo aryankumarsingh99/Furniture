@@ -7,9 +7,7 @@ import { FaSeedling } from "react-icons/fa";
 const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
-  { path: "/services", label: "Services" },
   { path: "/products", label: "Products" },
-  { path: "/process", label: "Process" },
   { path: "/contact", label: "Contact" },
 ];
 

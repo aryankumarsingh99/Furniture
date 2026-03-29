@@ -77,7 +77,7 @@ export default function AboutSection() {
                 className="about-scroll-item about-scroll-rise mt-5 max-w-2xl text-base leading-8 text-stone-700 sm:text-lg"
                 style={{ transitionDelay: "180ms" }}
               >
-                Welcome to our furniture studio, where tradition meets innovation to create beautiful, functional pieces for every space. We blend classic techniques with contemporary design, using quality materials and expert craftsmanship to ensure every item is both stylish and durable.
+                Welcome to our Raj Laxmi Wooden Furnitures, where tradition meets innovation to create beautiful, functional pieces for every space. We blend classic techniques with contemporary design, using quality materials and expert craftsmanship to ensure every item is both stylish and durable.
               </p>
               <p
                 className="about-scroll-item about-scroll-rise mt-4 max-w-2xl text-base leading-8 text-stone-700 sm:text-lg"
