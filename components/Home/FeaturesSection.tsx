@@ -46,8 +46,7 @@ export default function FeaturesSection() {
             loop
             muted
             playsInline
-            poster="/video/v5-poster.jpg"
-            preload="auto"
+             preload="auto"
             className="w-full max-w-md rounded-2xl shadow-xl border-4 border-[#ca965f] object-cover"
             aria-label="Modern wooden furniture in a living room video"
             initial={{ opacity: 0, scale: 0.7, rotate: -8 }}
