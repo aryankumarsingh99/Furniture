@@ -153,9 +153,7 @@ export default function Navbar({ menuOpen, setMenuOpen }: NavbarProps) {
               );
             })}
           </div>
-          <div className={`mt-4 pt-4 text-sm leading-7 ${scrolled ? 'text-[#fcf9f1]' : 'text-[#7c4a03]'}`}>
-            Explore our premium furniture collection, arranged in a modern mobile drawer.
-          </div>
+           
         </div>
       </div>
     </nav>
