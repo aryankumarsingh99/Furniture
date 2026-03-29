@@ -11,10 +11,12 @@ export default function ProductHero() {
 	const [activeImageIndex, setActiveImageIndex] = useState(0);
 
 	useEffect(() => {
-		const intervalId = window.setInterval(() => {
-			setActiveImageIndex((currentIndex) => (currentIndex + 1) % productImages.length);
-		}, 2500);
-		return () => window.clearInterval(intervalId);
+		if (typeof window !== "undefined") {
+			const intervalId = window.setInterval(() => {
+				setActiveImageIndex((currentIndex) => (currentIndex + 1) % productImages.length);
+			}, 2500);
+			return () => window.clearInterval(intervalId);
+		}
 	}, []);
 
 	return (
@@ -57,15 +59,15 @@ export default function ProductHero() {
 						</p>
 
 						<div className="mt-8 flex flex-wrap gap-4">
-							<div className="rounded-xl bg-white/80 px-6 py-4 shadow-md border border-[#bb8d48] min-w-[180px]">
+							<div className="rounded-xl bg-white/80 px-6 py-4 shadow-md border border-[#bb8d48] min-w-45">
 								<span className="block text-xl font-semibold text-[#bb8d48] mb-1">Living Room</span>
 								<span className="text-sm text-[#7c4a03]">Sofas, Coffee Tables, Chairs</span>
 							</div>
-							<div className="rounded-xl bg-white/80 px-6 py-4 shadow-md border border-[#bb8d48] min-w-[180px]">
+							<div className="rounded-xl bg-white/80 px-6 py-4 shadow-md border border-[#bb8d48] min-w-45">
 								<span className="block text-xl font-semibold text-[#bb8d48] mb-1">Bedroom</span>
 								<span className="text-sm text-[#7c4a03]">Beds, Dressers, Nightstands</span>
 							</div>
-							<div className="rounded-xl bg-white/80 px-6 py-4 shadow-md border border-[#bb8d48] min-w-[180px]">
+							<div className="rounded-xl bg-white/80 px-6 py-4 shadow-md border border-[#bb8d48] min-w-45">
 								<span className="block text-xl font-semibold text-[#bb8d48] mb-1">Dining</span>
 								<span className="text-sm text-[#7c4a03]">Tables, Chairs, Cabinets</span>
 							</div>
