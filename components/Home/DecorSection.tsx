@@ -46,9 +46,7 @@ export default function DecorSection() {
             Big Discounts<br />That Transform<br />Your Space
           </h2>
           <p className="text-[#6d4c2c] text-2xl mb-6 font-medium">Find the perfect decor for every corner</p>
-          <hr className="border-[#e0bfae] w-24 mb-4" />
-          <div className="text-2xl font-bold text-[#b85c38] tracking-wide mb-2">UPTO 60% OFF</div>
-        </div>
+          </div>
         {/* Right: Decor cards - horizontal scroll on small devices, grid on md+ */}
         <div className="flex-[2] w-full">
           {/* Mobile: horizontal scroll */}
