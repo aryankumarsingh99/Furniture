@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
  
-const formEndpoint = "https://formsubmit.co/735214aryan@gmail.com";
+const formEndpoint = "https://formsubmit.co/Sumitswiftrise@gmail.com";
 
 export default function ContactSection() {
     const contactInfo = [
