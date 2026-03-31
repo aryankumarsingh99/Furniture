@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
  
-const formEndpoint = "https://formsubmit.co/furniture.inquiries@example.com";
+const formEndpoint = "https://formsubmit.co/735214aryan@gmail.com";
 
 export default function ContactSection() {
     const contactInfo = [
@@ -37,6 +37,12 @@ export default function ContactSection() {
     formData.append("_subject", "Furniture website enquiry");
     formData.append("_captcha", "false");
     formData.append("_template", "table");
+
+    // Collect all selected product titles and join them for email
+    const selectedProducts = formData.getAll("productTitle");
+    if (selectedProducts.length > 0) {
+      formData.set("productTitle", selectedProducts.join(", "));
+    }
 
     try {
       const response = await fetch(formEndpoint, {
@@ -163,6 +169,32 @@ export default function ContactSection() {
                 </div>
 
                 <div className="grid gap-2">
+                  <label className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#a47551]">Product Title</label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {[
+                      "Recliner",
+                      "Wooden Street",
+                      "Iriana Cane multipurpose",
+                      "Sofa Bed with Storage",
+                      "Wooden Bed with Headboard Storage",
+                      "Classic Wooden Bed",
+                      "Modern Living Room Set",
+                      "Large Dining Table",
+                      "3-Door Almirah"
+                    ].map((title) => (
+                      <label key={title} className="flex items-center gap-2 bg-[#f7ede2]/80 px-3 py-2 rounded border border-[#bfa181]/40">
+                        <input
+                          type="checkbox"
+                          name="productTitle"
+                          value={title}
+                          className="accent-[#bb8d48]"
+                        />
+                        <span className="text-sm text-[#7c5e3c]">{title}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                <div className="grid gap-2">
                   <label className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#a47551]">Message</label>
                   <textarea
                     name="message"
@@ -200,8 +232,6 @@ export default function ContactSection() {
             </div>
           </motion.div>
         </div>
-
-       
       </div>
     </section>
   );
