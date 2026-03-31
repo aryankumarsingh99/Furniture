@@ -27,6 +27,24 @@ const cardData = [
     overlay: <>Sofa Bed <span className="text-[#bb8d48] group-hover:text-white">with Storage</span></>,
     desc: "Feltro Sheesham Wood Sofa Bed With Storage (King Size, Honey Irish Cream)",
   },
+  {
+    video: "/video/v11.mp4",
+    poster: "/Images/9.jpeg",
+    overlay: <>Wooden Bed <span className="text-[#bb8d48] group-hover:text-white">with Headboard Storage</span></>,
+    desc: "Aurora Sheesham Wood King Size Bed with Headboard Storage (Walnut Finish)",
+  },
+  {
+    video: "/video/v12.mp4",
+    poster: "/Images/10.jpeg",
+    overlay: <>Classic <span className="text-[#bb8d48] group-hover:text-white">Wooden Bed</span></>,
+    desc: "Elora Solid Wood Queen Size Bed (Teak Finish)",
+  },
+  {
+    video: "/video/v13.mp4",
+    poster: "/Images/11.jpeg",
+    overlay: <>Modern <span className="text-[#bb8d48] group-hover:text-white">Wooden Bed</span></>,
+    desc: "Zara Engineered Wood Bed with Box Storage (Matte Finish)",
+  },
 ];
 
 const StoriesShowcase = () => {

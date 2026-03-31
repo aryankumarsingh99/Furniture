@@ -24,12 +24,6 @@ export default function Home() {
         <MarqueeSection />
         <StoriesShowcase />
         <IllustratorShowcase />
-        {/* <StatsSection /> */}
-        {/* <AboutSection /> */}
-        {/* <HeroHighlightSection /> */}
-        {/* <ServicesSection /> */}
-        {/* <ProductSection /> */}
-        {/* <ProcessSection /> */}
         <DecorSection />
         <FeaturesSection />
         <ContactSection />

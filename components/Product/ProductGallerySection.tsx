@@ -66,6 +66,31 @@ const galleryImages = [
     src: "/Images/14.jpeg",
     alt: "Bookshelf",
     label: "Wooden Sofa",
+  },
+  {
+    src: "/Images/15.jpeg",
+    alt: "Bookshelf",
+    label: "Wooden Bed",
+  },
+  {
+    src: "/Images/16.jpeg",
+    alt: "Bookshelf",
+    label: "Wooden Bed",
+  },
+  {
+    src: "/Images/17.jpeg",
+    alt: "Bookshelf",
+    label: "Wooden Bed",
+  },
+  {
+    src: "/Images/i1.jpeg",
+    alt: "Bookshelf",
+    label: "Wooden Bed",
+  },
+  {
+    src: "/Images/i2.jpeg",
+    alt: "Bookshelf",
+    label: "Wooden Bed ",
   } 
       
     ];
