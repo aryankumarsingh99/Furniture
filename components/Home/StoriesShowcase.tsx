@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 
 const cardData = [
-  {
-    video: "/video/v7.mp4",
-    poster: "/Images/4.jpeg",
-    overlay: <>Relax in Style <span className="text-[#bb8d48] group-hover:text-white">Recliner</span></>,
-    desc: "Arvana Motorized R3 Rocking Revolving 1 Seater Recliner in Suede Fabric (Grey)",
+   {
+    video: "/video/video16.mp4",
+    poster: "/Images/11.jpeg",
+    overlay: <>Spacious <span className="text-[#bb8d48] group-hover:text-white">3-Door Almirah</span></>,
+    desc: "Modern 3-Door Almirah with Multiple Shelves and Drawers, Ample Storage (Matte Finish)",
   },
   {
     video: "/video/v2.mp4",
@@ -44,6 +44,24 @@ const cardData = [
     poster: "/Images/11.jpeg",
     overlay: <>Modern <span className="text-[#bb8d48] group-hover:text-white">Wooden Bed</span></>,
     desc: "Zara Engineered Wood Bed with Box Storage (Matte Finish)",
+  },
+  {
+    video: "/video/video14.mp4",
+    poster: "/Images/11.jpeg",
+    overlay: <>Modern <span className="text-[#bb8d48] group-hover:text-white">Living Room Set</span></>,
+    desc: "Luxe Modern Living Room Set with Sofa, Coffee Table, and Accent Chairs (Walnut Finish)",
+  },
+  {
+    video: "/video/video15.mp4",
+    poster: "/Images/11.jpeg",
+    overlay: <>Large <span className="text-[#bb8d48] group-hover:text-white">Dining Table</span></>,
+    desc: "Spacious Modern Dining Table Set with 8 Chairs (Solid Wood, Walnut Finish)",
+  },
+  {
+    video: "/video/v7.mp4",
+    poster: "/Images/4.jpeg",
+    overlay: <>Relax in Style <span className="text-[#bb8d48] group-hover:text-white">Recliner</span></>,
+    desc: "Arvana Motorized R3 Rocking Revolving 1 Seater Recliner in Suede Fabric (Grey)",
   },
 ];
 
