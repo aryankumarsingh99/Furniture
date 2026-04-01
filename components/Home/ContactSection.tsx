@@ -38,7 +38,7 @@ export default function ContactSection() {
     formData.append("_captcha", "false");
     formData.append("_template", "table");
 
-    // Collect all selected product titles and join them for email
+    // Collect all selected product titles 
     const selectedProducts = formData.getAll("productTitle");
     if (selectedProducts.length > 0) {
       formData.set("productTitle", selectedProducts.join(", "));
