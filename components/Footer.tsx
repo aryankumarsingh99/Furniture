@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaCouch } from "react-icons/fa";
 import { GiBedLamp } from "react-icons/gi";
@@ -31,10 +32,26 @@ export default function Footer() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a47551]">Quick links</div>
             <div className="mt-4 space-y-3 text-base text-[#7c5e3c]">
-              <div><a href="#home" className="transition hover:text-[#b85c38]">Home</a></div>
-              <div><a href="#about" className="transition hover:text-[#b85c38]">About</a></div>
-               <div><a href="#contact" className="transition hover:text-[#b85c38]">Contact</a></div>
-              <div><a href="#products" className="transition hover:text-[#b85c38]">Products</a></div>
+              <div>
+                <Link href="/" className="transition hover:text-[#b85c38]">
+                  Home
+                </Link>
+              </div>
+              <div>
+                <Link href="/about#about" className="transition hover:text-[#b85c38]">
+                  About
+                </Link>
+              </div>
+              <div>
+                <Link href="/contact" className="transition hover:text-[#b85c38]">
+                  Contact
+                </Link>
+              </div>
+              <div>
+                <Link href="/products" className="transition hover:text-[#b85c38]">
+                  Products
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -42,18 +59,18 @@ export default function Footer() {
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a47551]">Shop</div>
             <div className="mt-4 flex flex-col gap-3 text-base text-[#7c5e3c] sm:flex-row sm:gap-8">
               <div className="space-y-3">
-                <div><a href="#product-modern-sofa" className="transition hover:text-[#b85c38]">Modern Sofa</a></div>
-                <div><a href="#product-dining-table" className="transition hover:text-[#b85c38]">Recliner Sofa</a></div>
-                <div><a href="#product-bedroom-set" className="transition hover:text-[#b85c38]">Sleeper Sofa</a></div>
-                <div><a href="#product-bookshelf" className="transition hover:text-[#b85c38]">Sectional Sofa</a></div>
-                <div><a href="#product-armchair" className="transition hover:text-[#b85c38]">Classic Sofa</a></div>
+                <div><Link href="/products#product-modern-sofa" className="transition hover:text-[#b85c38]">Modern Sofa</Link></div>
+                <div><Link href="/products#product-dining-table" className="transition hover:text-[#b85c38]">Recliner Sofa</Link></div>
+                <div><Link href="/products#product-bedroom-set" className="transition hover:text-[#b85c38]">Sleeper Sofa</Link></div>
+                <div><Link href="/products#product-bookshelf" className="transition hover:text-[#b85c38]">Sectional Sofa</Link></div>
+                <div><Link href="/products#product-armchair" className="transition hover:text-[#b85c38]">Classic Sofa</Link></div>
               </div>
               <div className="space-y-3">
-                <div><a href="#product-coffee-table" className="transition hover:text-[#b85c38]">Premium Comfort Bed</a></div>
-                <div><a href="#product-tv-stand" className="transition hover:text-[#b85c38]">Wooden Bed</a></div>
-                <div><a href="#product-desk" className="transition hover:text-[#b85c38]">Artificial Bed</a></div>
-                <div><a href="#product-dresser" className="transition hover:text-[#b85c38]">Modern Bed</a></div>
-                <div><a href="#product-nightstand" className="transition hover:text-[#b85c38]">Oak Dining Table</a></div>
+                <div><Link href="/products#product-coffee-table" className="transition hover:text-[#b85c38]">Premium Comfort Bed</Link></div>
+                <div><Link href="/products#product-tv-stand" className="transition hover:text-[#b85c38]">Wooden Bed</Link></div>
+                <div><Link href="/products#product-desk" className="transition hover:text-[#b85c38]">Artificial Bed</Link></div>
+                <div><Link href="/products#product-dresser" className="transition hover:text-[#b85c38]">Modern Bed</Link></div>
+                <div><Link href="/products#product-nightstand" className="transition hover:text-[#b85c38]">Oak Dining Table</Link></div>
               </div>
             </div>
           </div>
