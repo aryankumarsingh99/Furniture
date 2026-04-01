@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { MouseEvent, useEffect, useState } from "react";
 
 const heroImages = [  
   "https://en.eastern-edition.com/web/upload/epblossom/img/easternedition-la-showroom.jpg",
@@ -10,6 +11,16 @@ const heroImages = [
 
 export default function HomeHero() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  const handleScrollToContact = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "/#contact";
+    }
+  };
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
@@ -64,16 +75,17 @@ export default function HomeHero() {
             <div className="mt-8 flex flex-col pb-7 gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href="#contact"
-                className="inline-flex w-full items-center justify-center bg-[#bb8d48] px-7 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#274b2a] sm:w-auto"
+                onClick={handleScrollToContact}
+                className="inline-flex w-full items-center justify-center bg-[#bb8d48] px-7 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#b99764] sm:w-auto"
               >
                 Shop Now
               </a>
-              <a
-                href="#about"
+              <Link
+                href="/products#product-gallery"
                 className="inline-flex w-full items-center justify-center border border-white/30 bg-white/10 px-7 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-white/15 sm:w-auto"
               >
                 Explore Collections
-              </a>
+              </Link>
             </div>
           </div>
         </div>

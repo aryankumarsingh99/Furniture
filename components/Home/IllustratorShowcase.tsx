@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const IllustratorShowcase = () => (
   <motion.section
@@ -19,9 +20,12 @@ const IllustratorShowcase = () => (
         Bridging the <span className="italic">Past,</span><br />
         to the <span className="italic">Future</span>
       </h2>
-      <button className="mt-4 px-8 py-3 border-2 border-white text-white bg-transparent rounded-lg text-lg font-medium hover:bg-white hover:text-[#1a2636] transition">
+      <Link
+        href="/about#about"
+        className="mt-4 px-8 py-3 border-2 border-white text-white bg-transparent rounded-lg text-lg font-medium hover:bg-white hover:text-[#1a2636] transition"
+      >
         Learn Our Philosophy
-      </button>
+      </Link>
     </div>
   </motion.section>
 );

@@ -100,7 +100,7 @@ const galleryImages = [
       const [modal, setModal] = useState({ open: false, idx: 0 });
 
       return (
-        <section className="relative bg-[linear-gradient(180deg,#ebd6c0_0%,#ffffff_100%)] py-16 px-4 sm:px-6 md:px-8 border-b border-[#c8d6b0]">
+        <section id="product-gallery" className="relative bg-[linear-gradient(180deg,#ebd6c0_0%,#ffffff_100%)] py-16 px-4 sm:px-6 md:px-8 border-b border-[#c8d6b0]">
           <div className="mx-auto max-w-7xl">
             <div className="mb-8 flex items-center gap-3 animate-fade-in-up">
               <span className="inline-flex rounded-full border border-[#c8d6b0] bg-[#bb8d48] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#ffffff]">Gallery</span>

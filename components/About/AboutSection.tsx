@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function AboutSection() {
@@ -177,13 +178,13 @@ export default function AboutSection() {
                 living now today
               </h2>
 
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 className="about-scroll-item about-scroll-soft mt-12 inline-flex min-w-56 items-center justify-center bg-[#bb8d48] px-8 py-5 text-2xl font-semibold text-white transition hover:bg-[#e0ab5d]"
                 style={{ transitionDelay: "220ms" }}
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
