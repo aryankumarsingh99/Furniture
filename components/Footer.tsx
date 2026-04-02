@@ -88,11 +88,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <FaPhone className="text-[#b96a4b]" />
-                <a href="tel:+919937099989" className="hover:underline text-[#a47551] font-semibold">+91 99370 99989</a>
+                <a href="tel:+919937099989" className="hover:underline text-[#a47551] ">+91 99370 99989</a>
               </div>
               <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[#b96a4b] size-7" />
-                <a href="mailto:rajlaxmiwoodenfurniture9989@gmail.com" className="hover:underline text-[#a47551] font-semibold break-all">rajlaxmiwoodenfurniture9989@gmail.com</a>
+                <FaEnvelope className="text-[#b96a4b] size-6" />
+                <a href="mailto:rajlaxmiwoodenfurniture9989@gmail.com" className="hover:underline text-[#a47551]  break-all">rajlaxmiwoodenfurniture9989@gmail.com</a>
               </div>
             </div>
           </div>
