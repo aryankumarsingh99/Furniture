@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaCouch, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaCouch, FaWhatsapp, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 import { GiBedLamp } from "react-icons/gi";
 
 export default function Footer() {
@@ -79,10 +79,21 @@ export default function Footer() {
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a47551]">Showroom</div>
             <div className="mt-4 space-y-3 text-base leading-7 text-[#a47551]">
               <div>POWER HOUSE, NH 326, GLOCAL MEDICAL ROAD, Jeypore, Odisha , 764001</div>
-              <div>Mon - Sat</div>
-              <div>10:00 AM - 8:00 PM</div>
-              <div>Contact: <a href="tel:+91 9583245585" className="hover:underline text-[#b85c38] font-semibold">+91 99370 99989</a></div>
-              <div>rajlaxmiwoodenfurniture9989@gmail.com</div>
+              <div className="flex items-center gap-3">
+                <span>Mon - Sat</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaClock className="text-[#b85c38]" />
+                <span>10:00 AM - 8:00 PM</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaPhone className="text-[#b85c38]" />
+                <a href="tel:+919937099989" className="hover:underline text-[#b85c38] font-semibold">+91 99370 99989</a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaEnvelope className="text-[#b85c38] size-7" />
+                <a href="mailto:rajlaxmiwoodenfurniture9989@gmail.com" className="hover:underline text-[#b85c38] font-semibold break-all">rajlaxmiwoodenfurniture9989@gmail.com</a>
+              </div>
             </div>
           </div>
 
