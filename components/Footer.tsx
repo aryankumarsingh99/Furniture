@@ -89,7 +89,7 @@ export default function Footer() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a47551]">Connect</div>
             <div className="mt-4 flex gap-3">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
+              <a href="https://www.facebook.com/share/1AjG43ALnF/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
                 <FaFacebookF className="text-xl" />
               </a>
               <a href="https://www.instagram.com/rajlaxmi_wooden_furnitures_?igsh=MXEzNjBqanNqNDUxcg==" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
