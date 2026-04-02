@@ -83,16 +83,16 @@ export default function Footer() {
                 <span>Mon - Sat</span>
               </div>
               <div className="flex items-center gap-3">
-                <FaClock className="text-[#b85c38]" />
+                <FaClock className="text-[#b96a4b]" />
                 <span>10:00 AM - 8:00 PM</span>
               </div>
               <div className="flex items-center gap-3">
-                <FaPhone className="text-[#b85c38]" />
-                <a href="tel:+919937099989" className="hover:underline text-[#b85c38] font-semibold">+91 99370 99989</a>
+                <FaPhone className="text-[#b96a4b]" />
+                <a href="tel:+919937099989" className="hover:underline text-[#a47551] font-semibold">+91 99370 99989</a>
               </div>
               <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[#b85c38] size-7" />
-                <a href="mailto:rajlaxmiwoodenfurniture9989@gmail.com" className="hover:underline text-[#b85c38] font-semibold break-all">rajlaxmiwoodenfurniture9989@gmail.com</a>
+                <FaEnvelope className="text-[#b96a4b] size-7" />
+                <a href="mailto:rajlaxmiwoodenfurniture9989@gmail.com" className="hover:underline text-[#a47551] font-semibold break-all">rajlaxmiwoodenfurniture9989@gmail.com</a>
               </div>
             </div>
           </div>
