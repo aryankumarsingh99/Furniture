@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaCouch } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaCouch, FaWhatsapp } from "react-icons/fa";
 import { GiBedLamp } from "react-icons/gi";
 
 export default function Footer() {
@@ -94,6 +94,9 @@ export default function Footer() {
               </a>
               <a href="https://www.instagram.com/rajlaxmi_wooden_furnitures_?igsh=MXEzNjBqanNqNDUxcg==" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]">
                 <FaInstagram className="text-xl" />
+              </a>
+              <a href="https://wa.me/+919583245585" target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center bg-[#fff7ee] text-[#b85c38] transition hover:bg-[#e7d3b7]" aria-label="Chat on WhatsApp">
+                <FaWhatsapp className="text-xl" />
               </a>
               
             </div>
