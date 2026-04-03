@@ -116,7 +116,18 @@ export default function Footer() {
         
 
         <div className="flex flex-col gap-3 pt-8 text-base text-[#a47551] sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 <span className="font-semibold">Swiftrise Solution Pvt.Ltd </span>. All rights reserved.</p>
+          <p>
+            © 2026{' '}
+            <a
+              href="https://swiftrise.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition hover:text-[#b85c38]"
+            >
+              Swiftrise Solution Pvt.Ltd
+            </a>
+            . All rights reserved.
+          </p>
           <p>Crafted with passion for modern living.</p>
         </div>
       </div>
